@@ -1,0 +1,44 @@
+body.active {
+  overflow-y: hidden;
+}
+
+.beginning.active {
+  width: 100vw;
+  height: 110vh;
+
+  padding-top: 60vh;
+
+  z-index: 2;
+
+  position: fixed;
+
+  background-image: url('../assets/intro_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: center;
+}
+
+.beginning.active img {
+  width: 23.73vw;
+  height: max-content;
+
+  animation: keyhole 1s ease-in-out infinite alternate;
+}
+
+.beginning {
+  display: none;
+}
+
+@keyframes keyhole {
+  0% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+  }
+  100% {
+      transform: scale(2.0);
+      -webkit-transform: scale(1.15);
+  }
+}

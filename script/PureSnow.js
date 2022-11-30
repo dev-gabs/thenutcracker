@@ -1,4 +1,4 @@
-let snowflakes_count = 200;
+let snowflakes_count = 160;
 
 // let base_css = ``; // Put your custom base css here
 
@@ -19,7 +19,7 @@ function toggle_snow() {
 }
 
 // Creating snowflakes
-function spawn_snow(snow_density = 200) {
+function spawn_snow(snow_density = 160) {
     snow_density -= 1;
 
     for (let x = 0; x < snow_density; x++) {
@@ -62,7 +62,7 @@ function spawnSnowCSS(snow_density = 200){
     
     for(let i = 1; i < snow_density; i++){
         let random_x = Math.random() * 100; // vw
-        let random_offset = random_range(-100000, 100000) * 0.0001; // vw;
+        let random_offset = -2; // vw;
         let random_x_end = random_x + random_offset;
         let random_x_end_yoyo = random_x + (random_offset / 2);
         let random_yoyo_time = random_range(30000, 80000) / 100000;
